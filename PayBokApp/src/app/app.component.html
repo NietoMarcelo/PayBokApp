@@ -1,4 +1,4 @@
-<mat-grid-list cols="8" rowHeight="50px">
+<mat-grid-list cols="8" rowHeight="70px">
   <mat-grid-tile colspan="1">
     <button mat-button [matMenuTriggerFor]="menu" mat-icon-button>
       <mat-icon style="color: white;">menu</mat-icon>
@@ -10,12 +10,15 @@
   </mat-grid-tile>
   <mat-grid-tile colspan="4">
     <div class="navText">
-      <span style="color: white;">Hello Robert ></span>
+      <button mat-mini-fab color="primary">
+        <span>R</span>
+      </button>
+      <span style="color: white; padding-left: 4px;">Hello Robert ></span>
     </div>
   </mat-grid-tile>
 
   <mat-grid-tile colspan="1">
-    <button mat-raised-button color="primary" >
+    <button mat-mini-fab color="primary" >
       <mat-icon>question_mark</mat-icon>
     </button>
   </mat-grid-tile>
@@ -27,4 +30,7 @@
 
 <mat-grid-list cols="1">
   <app-card-menu></app-card-menu>
+</mat-grid-list>
+<mat-grid-list cols="1">
+  <app-bills></app-bills>
 </mat-grid-list>

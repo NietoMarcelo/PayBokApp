@@ -13,6 +13,10 @@ import { CardMenuComponent } from './components/card-menu/card-menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BillsComponent } from './components/bills/bills.component';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+
+import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
   declarations: [
@@ -30,7 +34,10 @@ import {MatMenuModule} from '@angular/material/menu';
     MatGridListModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule,
+    MatDividerModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
