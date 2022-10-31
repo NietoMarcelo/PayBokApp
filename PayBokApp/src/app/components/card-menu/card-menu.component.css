@@ -1,0 +1,26 @@
+.menuCard {
+    width: 95%;
+    height: 250px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 2.5%;
+}
+
+.price {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: beige;
+    text-align: center;
+}
+
+.button {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: fit-content;
+    white-space: initial;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,30 @@
+<mat-grid-list cols="8" rowHeight="50px">
+  <mat-grid-tile colspan="1">
+    <button mat-button [matMenuTriggerFor]="menu" mat-icon-button>
+      <mat-icon style="color: white;">menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Account</button>
+      <button mat-menu-item>Options</button>
+    </mat-menu>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="4">
+    <div class="navText">
+      <span style="color: white;">Hello Robert ></span>
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1">
+    <button mat-raised-button color="primary" >
+      <mat-icon>question_mark</mat-icon>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+      <button mat-raised-button color="primary">Tu CVU</button>
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+<mat-grid-list cols="1">
+  <app-card-menu></app-card-menu>
+</mat-grid-list>
