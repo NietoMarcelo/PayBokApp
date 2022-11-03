@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 
 import { NgApexchartsModule } from "ng-apexcharts";
+import { CardsViewComponent } from './components/cards-view/cards-view.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgApexchartsModule } from "ng-apexcharts";
     HeaderComponent,
     CardMenuComponent,
     FooterComponent,
-    BillsComponent
+    BillsComponent,
+    CardsViewComponent
   ],
   imports: [
     BrowserModule,

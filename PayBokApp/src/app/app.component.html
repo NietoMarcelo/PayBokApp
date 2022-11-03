@@ -27,10 +27,17 @@
   </mat-grid-tile>
 
 </mat-grid-list>
+<div *ngIf="!showFirstView">
+  <mat-grid-list cols="1">
+    <app-card-menu></app-card-menu>
+  </mat-grid-list>
+  <mat-grid-list cols="1">
+    <app-bills></app-bills>
+  </mat-grid-list>
+</div>
+<div *ngIf="showCards">
+  <app-cards-view></app-cards-view>
+</div>
 
-<mat-grid-list cols="1">
-  <app-card-menu></app-card-menu>
-</mat-grid-list>
-<mat-grid-list cols="1">
-  <app-bills></app-bills>
-</mat-grid-list>
+
+<app-footer></app-footer>

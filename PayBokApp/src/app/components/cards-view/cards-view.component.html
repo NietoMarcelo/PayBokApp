@@ -1,0 +1,31 @@
+<div class="backStep">
+    <mat-icon>navigate_before</mat-icon>
+    <span>Tarjetas</span>
+</div>
+<div class="box">
+    <div class="conteiner">
+        <div class="card1">
+            <span>Tus Tarjetas</span>
+            <div class="message">
+                <div class="messageStyle"></div>
+                <mat-icon>info</mat-icon>
+                <div class="text">
+                    <span>En esta sección solo verás las tarjetas que están a tu nombre</span>
+                </div>
+            </div>
+        </div>
+        <div *ngFor="let i of cards">
+            <div class="cardVisa" [style]="i">
+                <div class="visaTitle">
+                    <img src="../../../assets/visa.png" alt="">
+                    <span>débito</span>
+                </div>
+                <div class="visaUser">
+                    <span>User Name</span>
+                    <span class="pass">* * * *</span>
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
